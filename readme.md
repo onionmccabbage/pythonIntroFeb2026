@@ -4,14 +4,14 @@
 
 Toby Dussek
 
-9:30 start
-11:00 coffee until 11:15
-12:00 Lunch until 1:00
-3:00 tea until 3:15
-4:30 end
+* 9:30 start
+* 11:00 coffee until 11:15
+* 12:00 Lunch until 1:00
+* 3:00 tea until 3:15
+* 4:30 end
 
 All my code will be here:
-  
+  https://github.com/onionmccabbage/pythonIntroFeb2026
 
 ### Monday
 - Welcome and intros
