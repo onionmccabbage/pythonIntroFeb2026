@@ -15,7 +15,7 @@ All my code will be here:
 
 ### Monday
 > Welcome and intros
-- where to write code: module (just a file) or immediate python
+> where to write code: module (just a file) or immediate python
 - architecture, structure, and professional code best practice
 > print() and input()
 > maths operators and data types
@@ -29,16 +29,16 @@ All my code will be here:
 > boolean True and False
 > type and type conversion
 > the if statement for conditional logic
-- for, while, break and pass
+> for, while, break and pass
 > print formatting
 > validate input (remember - all input is string)
 > after lunch review exercise
 > dictionaries (indexed iterable collections)
-- import, libraries and modules
+> import, libraries and modules
   to see what libraries are already installed: pip list
 > functions
 - packages (sinply a folder containing python files)
-- strptime or strftime.....
+> strptime or strftime.....
 
 ### Tuesday
 - how to access course recordings
