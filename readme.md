@@ -14,16 +14,16 @@ All my code will be here:
   https://github.com/onionmccabbage/pythonIntroFeb2026
 
 ### Monday
-- Welcome and intros
+> Welcome and intros
 - where to write code: module (just a file) or immediate python
 - architecture, structure, and professional code best practice
 - print() and input()
-- maths operators and data types
+> maths operators and data types
 - indentation
-- immutable strings
-- lists and tuples (and memory efficiency)
+> immutable strings
+> lists and tuples (and memory efficiency)
 - identifiers
-- boolean True and False
+> boolean True and False
 - type and type conversion
 - the if statement for conditional logic
 - for, while, break and pass

@@ -70,3 +70,13 @@ l['lang'] = ['Python', 'Java', 'Ada']
 print(l)
 
 # It is important to remember tuple, list and dict may contain ANY data members
+
+# we may add new members to an existing list
+k.append(a)
+# we may insert a new list memer between existing members
+k.insert(2, 'new')
+
+print(k)
+# we may use 'pop'
+k.pop()
+print(k)
