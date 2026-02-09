@@ -16,5 +16,7 @@ if __name__ == '__main__':
     print( f'Today is {n}' )
     r = showRawDate()
     print( r, type(r) )
+    # when using modules, we invoke strftime
+    # if we used immediate-mode python, we could use strptime
     print( datetime.strftime(r, "%Y %d-%m") ) # here we provide a datetime picture
 
