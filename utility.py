@@ -13,7 +13,11 @@ def stripStr(s):
     result = s.strip() # .strip() will remove any leading or trailing whitespace
     return result
 
+# what does Python call this module when it runs?
+print(f'Python has assigned the name {__name__} to this module')
+
 if __name__ == '__main__':
+    # the following code will NOT be executed if we import this module elsewhere
     # exercise this code
     values = (3, 42, 5.77, 'oops')
     for i in values:

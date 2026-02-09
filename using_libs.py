@@ -4,6 +4,7 @@ from datetime import datetime # there is a 'datetime' feature in teh 'datetime' 
 from utility import makeint
 
 
+
 def showToday():
     '''return a nicely formatted date'''
     now = datetime.date( datetime.today() )
@@ -23,3 +24,10 @@ if __name__ == '__main__':
     # if we used immediate-mode python, we could use strptime
     print( datetime.strftime(r, "%Y %d-%m") ) # here we provide a datetime picture
 
+# what does Python call this module when it runs?
+print(f'Python has assigned the name {__name__} to this module')
+
+if __name__ == '__main__':
+    # we can safely use the imported functions within this module
+    n = 8.99
+    print(makeint(n)) # 8
