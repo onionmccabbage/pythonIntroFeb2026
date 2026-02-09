@@ -1,5 +1,8 @@
 # we can work with dates and times using the datetime library
 from datetime import datetime # there is a 'datetime' feature in teh 'datetime' library
+# we may also import from our own modules
+from utility import makeint
+
 
 def showToday():
     '''return a nicely formatted date'''

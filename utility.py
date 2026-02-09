@@ -13,11 +13,12 @@ def stripStr(s):
     result = s.strip() # .strip() will remove any leading or trailing whitespace
     return result
 
-# exercise this code
-values = (3, 42, 5.77, 'oops')
-for i in values:
-    print(makeint(i)) 
+if __name__ == '__main__':
+    # exercise this code
+    values = (3, 42, 5.77, 'oops')
+    for i in values:
+        print(makeint(i)) 
 
-texts = ('   hello   ', "\n\nwow", '''\t\t   done   \t''')
-for i in texts:
-    print( f'---{ stripStr(i) }---' ) # ...so we can check there is no whitespace left
+    texts = ('   hello   ', "\n\nwow", '''\t\t   done   \t''')
+    for i in texts:
+        print( f'---{ stripStr(i) }---' ) # ...so we can check there is no whitespace left
