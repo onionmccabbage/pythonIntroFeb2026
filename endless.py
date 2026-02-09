@@ -12,11 +12,18 @@ def checkIfOdd(n):
     else:
         return False
 
-while True:
-    ''' check if a random number is 5
-    then break out of this endless loop'''
-    r = random.randint(1,10) # a random integer between 1 and 10 inclusive
-    isOdd = checkIfOdd(r)
-    print(f'The number {r} odd:{isOdd}')
-    if r==5:
-        break # this is where we break out of the while loop
+def myFn():
+    while True:
+        ''' check if a random number is 5
+        then break out of this endless loop'''
+        r = random.randint(1,10) # a random integer between 1 and 10 inclusive
+        isOdd = checkIfOdd(r)
+        print(f'The number {r} odd:{isOdd}')
+        if r==5:
+            break # this is where we break out of the while loop
+
+# the following line is VERY common syntax across Python modules
+if __name__ == '__main__':
+    '''The above line checks to make sure this module is being run directly
+    Only then will the following code be executed'''
+    myFn()
