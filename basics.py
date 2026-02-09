@@ -37,3 +37,27 @@ print(j, type(j), type(g))
 print( j[3:5] )
 print( j[0:5:2] ) # [start:stop-before:step]
 print( j[::-1] )  # -1 means backwards!!
+
+# a list is a mutable ordinal collection of any data type
+k = [6, 3.4, False, 'coffee', 'text', 42] # NB () declares a tuple, [] declares a list (like an array in other languages)
+# we may use slicing to access one or more members of any collection
+print( k[3:6] )
+# unlike string and tuple, a list is mutable
+k[2] = True
+print(k, type(k), type(k[2]))
+
+# How to choose which data type...
+# for numbers its easy, just write the number!
+# also for text, just always use a string
+# For list and tuple they appear very similar in purpose
+# but remember, we CANNOT alter a tuple once it is created
+# (a list can be changed after creation)
+# The general rule is: use a tuple unless you need a list
+
+# Another data type in Python is the dictionary
+# A dictionary is a non-ordinal mutable collection of any data type
+# (a bit like a hash or an object in other languages) 
+# a dictionary is a collection of key:value pairs
+l = {'first':'Ethel', 'last':'Skronk', 'age':42, 'admin':False}
+# we may access members of a dictionary like this
+print( l, type(l) )
