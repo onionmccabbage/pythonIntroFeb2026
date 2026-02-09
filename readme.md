@@ -22,19 +22,21 @@ All my code will be here:
 > indentation
 > immutable strings
 > lists and tuples (and memory efficiency)
-- identifiers
-- the 'in' operator
+> identifiers
+  - use letters, numbers and underscore, don't start with a digit
+  - by convention we use snake_case, or camelCase, or PascalCase
+> the 'in' operator
 > boolean True and False
 > type and type conversion
 > the if statement for conditional logic
 - for, while, break and pass
 > print formatting
 > validate input (remember - all input is string)
-- after lunch review exercise
+> after lunch review exercise
 > dictionaries (indexed iterable collections)
 - import, libraries and modules
   to see what libraries are already installed: pip list
-- functions
+> functions
 - packages (sinply a folder containing python files)
 
 ### Tuesday

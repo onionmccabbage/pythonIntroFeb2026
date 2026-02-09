@@ -7,7 +7,7 @@ guess_counter = 0
 
 while True: # keep going!!
     guess_counter += 1
-    # we reeally should validate here!!!!!!
+    # we really should validate here!!!!!!
     try:
         guess = int(float(input('guess:'))) # make sure it's an int
     except:
