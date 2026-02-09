@@ -61,3 +61,12 @@ print(k, type(k), type(k[2]))
 l = {'first':'Ethel', 'last':'Skronk', 'age':42, 'admin':False}
 # we may access members of a dictionary like this
 print( l, type(l) )
+print( l['age'], type(l['age']) )
+# we CANNOT use slicing since a dict is not ordinal
+# We may change (mutate) members of a dict
+l['admin'] = True
+# we may add new members to a dict
+l['lang'] = ['Python', 'Java', 'Ada']
+print(l)
+
+# It is important to remember tuple, list and dict may contain ANY data members
