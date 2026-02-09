@@ -38,6 +38,7 @@ All my code will be here:
   to see what libraries are already installed: pip list
 > functions
 - packages (sinply a folder containing python files)
+- strptime or strftime.....
 
 ### Tuesday
 - how to access course recordings
