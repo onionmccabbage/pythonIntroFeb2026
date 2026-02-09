@@ -29,7 +29,9 @@ def checkNum(x): # we may choose to pass in arguments to the function
     elif type(x)==float:
         return f'The value {x} is a float'
     else:
-        return '{x} is not a numeric value'
+        return f'{x} is not a numeric value'
 
-# we may call afunction at any time
-print( checkNum() ) # NB the () are where we call the fuction
+# we may call a function at any time
+print( checkNum(3) ) # NB the () are where we call the fuction
+print( checkNum(5.009) )
+print( checkNum('six') )
