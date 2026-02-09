@@ -19,15 +19,15 @@ All my code will be here:
 - architecture, structure, and professional code best practice
 - print() and input()
 > maths operators and data types
-- indentation
+> indentation
 > immutable strings
 > lists and tuples (and memory efficiency)
 - identifiers
 > boolean True and False
 - type and type conversion
-- the if statement for conditional logic
+> the if statement for conditional logic
 - for, while, break and pass
-- print formatting
+> print formatting
 - validate input (remember - all input is string)
 - after lunch review exercise
 - dictionaries (indexed iterable collections)
