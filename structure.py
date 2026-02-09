@@ -24,6 +24,8 @@ for i in b: # we often use 'i' for iterator
 # any code block will end when we no longer indent
 # we may declare re-useable code blocks as functions
 def checkNum(x): # we may choose to pass in arguments to the function
+    '''We often write a docstring to make it clear what the function is for
+    Using triple-quotes lets us write multi-line explanations'''
     if type(x)==int:
         return f'The value {x} is an integer'  # we may return anything from a function (or nothing)
     elif type(x)==float:
