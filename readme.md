@@ -23,6 +23,7 @@ All my code will be here:
 > immutable strings
 > lists and tuples (and memory efficiency)
 - identifiers
+- the 'in' operator
 > boolean True and False
 > type and type conversion
 > the if statement for conditional logic
@@ -30,7 +31,7 @@ All my code will be here:
 > print formatting
 > validate input (remember - all input is string)
 - after lunch review exercise
-- dictionaries (indexed iterable collections)
+> dictionaries (indexed iterable collections)
 - import, libraries and modules
   to see what libraries are already installed: pip list
 - functions
