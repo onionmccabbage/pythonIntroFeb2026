@@ -11,11 +11,7 @@ You may choose to write several separate functions, or else write it all in one 
 
 Use documentation, look online, ask me, ask each other...
 
-
-
-
-
-
+At the end there will be time to present what you have built
 
 #### Optional
 
