@@ -17,18 +17,18 @@ All my code will be here:
 > Welcome and intros
 - where to write code: module (just a file) or immediate python
 - architecture, structure, and professional code best practice
-- print() and input()
+> print() and input()
 > maths operators and data types
 > indentation
 > immutable strings
 > lists and tuples (and memory efficiency)
 - identifiers
 > boolean True and False
-- type and type conversion
+> type and type conversion
 > the if statement for conditional logic
 - for, while, break and pass
 > print formatting
-- validate input (remember - all input is string)
+> validate input (remember - all input is string)
 - after lunch review exercise
 - dictionaries (indexed iterable collections)
 - import, libraries and modules
