@@ -11,6 +11,12 @@ You may choose to write several separate functions, or else write it all in one 
 
 Use documentation, look online, ask me, ask each other...
 
+
+
+
+
+
+
 #### Optional
 
 - entering -1 quits the game (tell them the answer)
