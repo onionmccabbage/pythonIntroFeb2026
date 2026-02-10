@@ -4,12 +4,13 @@ def readFromFile():
     '''retrieve the contents of a text file and return'''
     try:
         # we need an I/O wrapper, i.e. a File Access Object
-        fin = open('my_file.txt', 'rt') # 'rt' will read text
-        # print(type(fin))
-        # read will retrieve the entire file contents
-        # readlines will retrieve the entire contents into a list of strings
-        r = fin.read()
-        return r
+        with open('my_file.txt', 'rt') as fin: # 'rt' will read text
+            # print(type(fin))
+            # read will retrieve the entire file contents
+            # readlines will retrieve the entire contents into a list of strings
+            r = fin.read()
+            # if you use 'with, then the asset will automatically close when done
+            return r
     except FileNotFoundError as fnf:
         print(f'No such file: {fnf}')
     except Exception as err:
