@@ -41,11 +41,11 @@ All my code will be here:
 > strptime or strftime.....
 
 ### Tuesday
-- how to access course recordings
+> how to access course recordings
   - https://sites.neueda.com/lm_ericsson_programming_in_python/site/index.html
   - find the recordings
   - username: student pwd: Belfast2024
-- if __name__ == '__main__'
+> if __name__ == '__main__'
 - range, generators
 - comprehensions
 - to add libraries to python:
@@ -55,7 +55,7 @@ All my code will be here:
   - pip3 install requests
 - using requests (to access web API via HTTP)
 - strings with triple quotes
-- exception handling (try-except etc.)
+> exception handling (try-except etc.)
 - debug tools   
 - review exercise
 - memory leaks 

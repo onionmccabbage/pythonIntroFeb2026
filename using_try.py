@@ -16,7 +16,7 @@ def askUser():
     finally: # this is an optional block
         # finally is a good place to tidy up if there was a problem
         print('This block will run even if there is no exception')
-
+                
 if __name__ == '__main__':
     n = askUser() # we can call our functions to exercise this code
     print(f'The user entered {n}')
