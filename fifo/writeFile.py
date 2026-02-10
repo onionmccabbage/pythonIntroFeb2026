@@ -3,9 +3,13 @@
 def writeTofile(c):
     '''Persist the entire content of 'c' into a text file
     We will use write, and append each entry'''
+    fout = False
     try:
+        # 'x' means exclusive access - thows an exception if the file already exists
         fout = open('my_log.txt', 'a') # 'a' will append, the default is text
         fout.write(c)
+        # we may choose to add a new line character
+        fout.write('\n')
         fout.close()
     except Exception as err:
         print(f'Problem: {err}')

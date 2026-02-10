@@ -61,7 +61,7 @@ All my code will be here:
 - memory leaks 
 - File input and output
 - the nature of file access objects
-- I/O bound
+> I/O bound - use as infrequently as possible
 
 ### Wednesday
 - quick review of where we got to
