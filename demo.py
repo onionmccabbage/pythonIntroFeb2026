@@ -14,4 +14,31 @@ f = random.randrange(0,10)
 g = randint(1,10)
 
 
+# we sometimes plan our code by writing outline blocks
+def check():
+    pass # this does nothing - we intend to come back and fill in the details later
+
+def doWork():
+    pass
+
+def makeLog():
+    pass
+
+def main():
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

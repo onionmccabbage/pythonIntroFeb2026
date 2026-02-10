@@ -42,6 +42,9 @@ All my code will be here:
 
 ### Tuesday
 - how to access course recordings
+  - https://sites.neueda.com/lm_ericsson_programming_in_python/site/index.html
+  - find the recordings
+  - username: student pwd: Belfast2024
 - if __name__ == '__main__'
 - range, generators
 - comprehensions
@@ -55,6 +58,7 @@ All my code will be here:
 - exception handling (try-except etc.)
 - debug tools   
 - review exercise
+- memory leaks 
 - File input and output
 - the nature of file access objects
 
