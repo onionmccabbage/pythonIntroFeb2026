@@ -56,7 +56,7 @@ All my code will be here:
 > using requests (to access web API via HTTP)
 - strings with triple quotes
 > exception handling (try-except etc.)
-- debug tools   
+> debug tools   
 - review exercise
 - memory leaks 
 - File input and output

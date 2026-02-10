@@ -1,3 +1,5 @@
+from random import randint
+
 # Python has a 'range' object with is very useful
 # This is designed to make your coding easy, by providing a range of values 
 
@@ -9,3 +11,23 @@ for i in d:
 # NB a vast range of values does not need to exist in memory
 # the range object will povide them on demand (thus saving memory)
 endless = range(-10**1000, 10**1000)
+
+# we can use range to generate large quantities of related data
+# this saves memory
+
+# we can use range to make a generator for any mathematical sequence
+# here we generate square numbers
+squares = (i*i for i in range(0,11)) # the () creeate a generator
+print(squares)
+# we may retrieve each member of the generator like this
+for _ in squares: # NB the underscore _  is often used as a label for an iterator
+    print(_)
+
+# real-world use-case
+# We need to provide random temperature values
+# these could be used in a test to check our code responds to temperature
+rndGen = (randint(0,10) for i in range(0,10**100000))
+
+print( rndGen.__next__() ) # this lets us grab the next available member from a generator
+
+
