@@ -1,0 +1,25 @@
+Whats do we cover next...
+leave a gap - consolidate your python before attending the next course
+
+Advanced Python (4 days) March 2026
+- abstract and concrete classes
+- class inheritance
+- overriding built in methods
+- functional programing: map, filter, reduce
+- positional arguments and keyword arguments
+- working with databases: create, read, update and delete
+- using stdout
+- overview of testing
+- profiling and timing code
+- multi-threading
+- microservices
+
+Beyond Advanced Python (5 days) April 2026
+- design patterns
+- observables
+- architectural patterns- stateful design 
+- Reactive programming
+- threads and processing
+- locks and semaphores
+- asyncio
+- Jupyter, Numpy and pandas (foundational to data analysis, machine learning and common AI)
