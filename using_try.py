@@ -7,8 +7,15 @@ def askUser():
         user_number = input('please enter a number: ') # NB this will always be a string
         numeric_value = int(float(user_number)) # first make the string into a float, then mke the float into an int
         return numeric_value
-    except: # if an exception happens within the try block, then this except block will run
-        print('something went wrong')
+    # we can choose which exceptions to handle
+    # You must go from specific exceptions to more general ones
+    except ValueError as ve: # if a ValueError exception happens within the try block, then this except block will run
+        print(f'something went wrong: {ve}')
+    except Exception as err: # we may choose to handle other excpetions here
+        print(f'Unknown problem:{err}')
+    finally: # this is an optional block
+        # finally is a good place to tidy up if there was a problem
+        print('This block will run even if there is no exception')
 
 if __name__ == '__main__':
     n = askUser() # we can call our functions to exercise this code
