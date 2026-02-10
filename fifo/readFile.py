@@ -6,8 +6,12 @@ def readFromFile():
         # we need an I/O wrapper, i.e. a File Access Object
         fin = open('my_file.txt', 'rt') # 'rt' will read text
         # print(type(fin))
-        r = fin.read() # read will retrieve the entire file contents
+        # read will retrieve the entire file contents
+        # readlines will retrieve the entire contents into a list of strings
+        r = fin.read()
         return r
+    except FileNotFoundError as fnf:
+        print(f'No such file: {fnf}')
     except Exception as err:
         print(f'Problem: {err}')
     finally:
