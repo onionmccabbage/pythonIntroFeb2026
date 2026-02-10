@@ -12,11 +12,13 @@ def getRemoteData():
         response = requests.get(api) # this will make a request to the URL
         # we know the data is JSON in this case
         photos = response.json() # or xml, text, html etc.
-        return photos
+        # NB Python automatically converts the JSON text into a Python structure
+        return photos # we have a list of dict
     except Exception as err: # we should consider using specific exception types
         print(f'Connection error: {err}')
 
 if __name__ == '__main__':
     # here we can exercise the code within this module
     p = getRemoteData() # call the function
-    print(p)
+    print(type(p))
+    print( p[4] )
