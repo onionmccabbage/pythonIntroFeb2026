@@ -5,7 +5,7 @@ import requests # we import the entire library
 def getRemoteData():
     '''retrieve a load of data about photos from a remote API'''
     # Application Programming Interface
-    api = 'http://jjjjjsonplaceholder.typicode.com/photos'
+    api = 'http://jsonplaceholder.typicode.com/photos'
     # This is the sort of thing that could go wrong
     try:
         # we will use 'get' to retrieve all the JSON text
