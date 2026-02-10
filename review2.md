@@ -15,7 +15,7 @@ There will be an opportunity to share your code at the end
 Write a new module which asks the user for a 'category' 
 (remember to use input() which always returns a string)
 Validate the user input as follows:
-- The category may only be one of 'users', 'albums', 'todos' or 'photos'
+- The category may only be one of 'users', 'posts', 'todos' or 'photos'
   (maybe use the 'in' operator to see if the value is in a tuple of permitted values)
 
 Also ask the user to enter an id
