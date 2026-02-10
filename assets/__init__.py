@@ -1,0 +1,1 @@
+# in older versions of Python the existance of __init__.py allowed us to use a folder as a package

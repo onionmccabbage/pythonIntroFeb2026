@@ -48,12 +48,12 @@ All my code will be here:
 > if __name__ == '__main__'
 - range, generators
 - comprehensions
-- to add libraries to python:
-  - python -m ensurepip
-  - python –m pip install requests (or any other library you need)
+> to add libraries to python:
+  > python -m ensurepip
+  > python –m pip install requests (or any other library you need)
   or 
-  - pip3 install requests
-- using requests (to access web API via HTTP)
+  > pip3 install requests
+> using requests (to access web API via HTTP)
 - strings with triple quotes
 > exception handling (try-except etc.)
 - debug tools   
