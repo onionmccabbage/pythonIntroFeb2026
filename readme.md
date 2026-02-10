@@ -46,8 +46,8 @@ All my code will be here:
   - find the recordings
   - username: student pwd: Belfast2024
 > if __name__ == '__main__'
-- range, generators
-- comprehensions
+> range, generators
+> comprehensions
 > to add libraries to python:
   > python -m ensurepip
   > python –m pip install requests (or any other library you need)
