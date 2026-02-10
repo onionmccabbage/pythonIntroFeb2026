@@ -57,10 +57,11 @@ All my code will be here:
 - strings with triple quotes
 > exception handling (try-except etc.)
 > debug tools   
-- review exercise
+> review exercise
 - memory leaks 
 - File input and output
 - the nature of file access objects
+- I/O bound
 
 ### Wednesday
 - quick review of where we got to

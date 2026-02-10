@@ -12,6 +12,7 @@ def cleanup(category='users', id=0):
         category = category.lower() # force it to lower case
     else:
         category = 'users'
+    # we should have some try-except here
     id = int( float(id) )
     if id not in range(1,9): # stop before 9
         id = 1 # set a sensible default
