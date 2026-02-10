@@ -54,13 +54,13 @@ All my code will be here:
   or 
   > pip3 install requests
 > using requests (to access web API via HTTP)
-- strings with triple quotes
+> strings with triple quotes
 > exception handling (try-except etc.)
 > debug tools   
 > review exercise
 - memory leaks 
-- File input and output
-- the nature of file access objects
+> File input and output
+> the nature of file access objects
 > I/O bound - use as infrequently as possible
 
 ### Wednesday
