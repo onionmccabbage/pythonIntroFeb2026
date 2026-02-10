@@ -4,10 +4,14 @@ from util import getNum
 import requests
 
 def getOnePhoto(n):
-    pass
+    api = 'http://jsonplaceholder.typicode.com/photos'
+    response = requests.get(f'{api}/{n}')
+    photo = response.json() # this converts the returned JSON to a Python structure
+    return photo
 
 if __name__ == '__main__':
     # ask the user for a number
     n = getNum()
     # then retreive just that one photo
-    getOnePhoto(n)
+    p = getOnePhoto(n)
+    print(p)
