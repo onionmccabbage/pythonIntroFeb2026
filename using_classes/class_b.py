@@ -6,14 +6,16 @@
 class Person():
     '''store name and age'''
     # we usually start with the __init__ method
-    def __init__(self, n, a):
+    def __init__(self, n, a, admin=False): # we may choose to provide defaults (they must come last)
         # name-mangling: we put two underscores in front of data labels
         self.name = n # this line actually calls the setter-method for 'name'
         self.age  = a # this calls the setter for 'age'
+        self.admin = admin
     # we then declare accessor and mutator methods (getter/setter)
     @property # the @ makes this line a decorator
     def name(self):
         return self.__name
+    # NB if we do not write a setter, this property will be read-only
     @name.setter
     def name(self, new_name):
         ''' here we can implement validation checks'''
@@ -22,7 +24,6 @@ class Person():
                                    # it is nearly impossible to access these from outside the class
         else:
             self.__name = 'default' # we may choose to set a sensible default value
-
     @property
     def age(self):
         return self.__age
@@ -33,12 +34,32 @@ class Person():
             self.__age = int(new_age)
         else:
             raise TypeError('Age must be a positive number')
+    @property
+    def admin(self):
+        return self.__admin
+    @admin.setter
+    def admin(self, new_admin):
+        '''Ensure that admin is a boolean, default to False'''
+        if type(new_admin) == bool:
+            self.__admin = new_admin
+        else:
+            self.__admin = False
 
 if __name__ == '__main__':
-    flo = Person('Floella', True)
-    Eth = Person('Ethel', 98)
+    flo = Person('Floella', 43, True)
+    Eth = Person('Ethel', 98) # the admin will default to False
     # we may access members of our class like this
-    print(flo.name, flo.age) # here we call the getter-methods for name and age
-    # we may mutate data members like this
-    Eth.age = False
-    print(Eth.age)
+    print(flo.name, flo.age, flo.admin) # here we call the getter-methods for name and age
+    # we may try to mutate data members like this
+    try:
+        Eth.age = False
+        print(Eth.age)
+    except TypeError as te:
+        print( te )
+    try:
+        print( flo.__name ) # this will fail - we cannot access mangled members
+    except Exception as err:
+        print(err)
+    flo.name = 'Dame Floella' # this will fail (name is read-only)
+    Eth.admin = 'daft'
+    print(Eth.admin) # defaults to False
