@@ -12,5 +12,10 @@ def makeDT():
         # to make an ordinary function behave as a generator, we use 'yield' instead of 'return'
         yield dt_str
 
+# NB any generator will be destroyed when the module stops running
+
 if __name__ == '__main__':
-    pass
+    dt = makeDT() # we need an instane of our generator
+    print( type(dt) )
+    t1 = dt.__next__() # grab the next item from the generator
+    print( t1 )
