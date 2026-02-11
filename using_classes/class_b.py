@@ -8,8 +8,8 @@ class Person():
     # we usually start with the __init__ method
     def __init__(self, n, a):
         # name-mangling: we put two underscores in front of data labels
-        self.__name = n # name-mangling makes it very hard to access these data members directly
-        self.__age  = a # it is nearly impossible to access these from outside the class
+        self.name = n # this line actually calls the setter-method for 'name'
+        self.age  = a # this calls the setter for 'age'
     # we then declare accessor and mutator methods (getter/setter)
     @property # the @ makes this line a decorator
     def name(self):
@@ -18,7 +18,8 @@ class Person():
     def name(self, new_name):
         ''' here we can implement validation checks'''
         if type(new_name)==str and len(new_name) >0:
-            self.__name = new_name
+            self.__name = new_name # name-mangling makes it very hard to access these data members directly
+                                   # it is nearly impossible to access these from outside the class
         else:
             self.__name = 'default' # we may choose to set a sensible default value
 
@@ -34,10 +35,10 @@ class Person():
             raise TypeError('Age must be a positive number')
 
 if __name__ == '__main__':
-    flo = Person('Floella', 43)
+    flo = Person('Floella', True)
     Eth = Person('Ethel', 98)
     # we may access members of our class like this
-    print(flo.__name, flo.__age) # here we call the getter-methods for name and age
+    print(flo.name, flo.age) # here we call the getter-methods for name and age
     # we may mutate data members like this
     Eth.age = False
     print(Eth.age)
