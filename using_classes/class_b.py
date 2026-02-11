@@ -25,6 +25,13 @@ class Person():
     @property
     def age(self):
         return self.__age
+    @age.setter
+    def age(self, new_age):
+        '''validate the age is a positive integer'''
+        if type(new_age) in (int, float) and new_age >0:
+            self.__age = int(new_age)
+        else:
+            raise TypeError('Age must be a positive number')
 
 if __name__ == '__main__':
     flo = Person('Floella', 43)
@@ -32,5 +39,5 @@ if __name__ == '__main__':
     # we may access members of our class like this
     print(flo.__name, flo.__age) # here we call the getter-methods for name and age
     # we may mutate data members like this
-    # Eth.age = False
-    # print(Eth.age)
+    Eth.age = False
+    print(Eth.age)
