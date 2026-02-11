@@ -84,7 +84,10 @@ All my code will be here:
   - remember to close file access (or use 'with')
   - we can reduce reliance on global objects (write as much code as possible within code blocks suc has functions or classes)
 - review exercise
-- end of course feedback
+- end of course feedback:
+-   https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=ILT&ID=LZPS191140&OID=411120&Title=Product%20Development%20Leadership%20Program&Owner=Naveen%20Kumar%20E%20(EXT)
+-   
+-   also https://easyretro.io/publicboard/NTDqkkm6utgJFD9cdBrdb4sI6n72/ca5ab3f2-3c76-4dea-a57c-24c04300156e
 
 
 - where to go from here:
