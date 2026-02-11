@@ -44,12 +44,18 @@ class Person():
             self.__admin = new_admin
         else:
             self.__admin = False
+    def __str__(self):
+        # self.name calls the getter     self.__admin directly accesses the mangled value
+        return f'{self.name} is {self.age} years old. Admin: {self.__admin}'
 
 if __name__ == '__main__':
     flo = Person('Floella', 43, True)
     Eth = Person('Ethel', 98) # the admin will default to False
     # we may access members of our class like this
     print(flo.name, flo.age, flo.admin) # here we call the getter-methods for name and age
+    # we may print a class instance
+    print(flo) # this calls the __str__ method
+    
     # we may try to mutate data members like this
     try:
         Eth.age = False
