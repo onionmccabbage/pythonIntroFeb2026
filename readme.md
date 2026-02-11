@@ -64,21 +64,21 @@ All my code will be here:
 > I/O bound - use as infrequently as possible
 
 ### Wednesday
-- quick review of where we got to
-- in Python EVERTHING is an Object - every function, every class every module....
-- any input or output is necessarily slow: I/O bound
-- anything with __nnn__ is part of python (built in features) called 'dunder'
-- functions live in classes, which live in modules which live in packages
+> quick review of where we got to
+> in Python EVERTHING is an Object - every function, every class every module....
+> any input or output is necessarily slow: I/O bound
+> anything with __nnn__ is part of python (built in features) called 'dunder'
+> functions live in classes, which live in modules which live in packages
 - custom generator and yield
 - global and local scope 
-- data modelling structures: 
+> data modelling structures: 
     use built in structures until they do not suit the purpose (then use classes)
-- Objects and Classes (OOP)
+> Objects and Classes (OOP)
   classes have properties (something belonging to the class) and methods (something the class can do)
 > get/set as property decorators @property
 > name mangling (__) and __slots__
-- properties, methods, __str__
-- inheritance
+> properties, methods, __str__
+> inheritance
 - we have no direct control over memory management in Python
   - we may choose efficient structures - e.g. always use a tuple unless you MUST use a list
   - remember to close file access (or use 'with')
