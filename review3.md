@@ -1,4 +1,4 @@
-## Python Review 3
+## Python Review 3 (1 hr 20 min until 3:00)
 
 - Alter these instructions to suit your thinking
 - Aim for good architecture (maybe use separate modules, remember 'if __name__...')
@@ -21,10 +21,12 @@ Your class should validate:
 If you like, in your Weather class override __str__ so the class prints nicely,
 something like 'The weather in Athlone is cloudy at 12 degrees celcius'
 
+You might choose to implement __slots__ for your class
+
 Exercise the code by making instances of your Weather class with suitable values
 
 ### If Time
 
-Print the values from the weather instance to a text file 
+Persist the values from the weather instance to a text file 
 You could include a timestamp in this text file (use datetime)
 Also provide a mechanism to read back the weather reports from the text file
