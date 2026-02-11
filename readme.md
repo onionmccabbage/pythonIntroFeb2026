@@ -70,7 +70,7 @@ All my code will be here:
 > anything with __nnn__ is part of python (built in features) called 'dunder'
 > functions live in classes, which live in modules which live in packages
 - custom generator and yield
-- global and local scope 
+> global and local scope 
 > data modelling structures: 
     use built in structures until they do not suit the purpose (then use classes)
 > Objects and Classes (OOP)
