@@ -37,7 +37,7 @@ All my code will be here:
 > import, libraries and modules
   to see what libraries are already installed: pip list
 > functions
-- packages (sinply a folder containing python files)
+> packages (sinply a folder containing python files)
 > strptime or strftime.....
 
 ### Tuesday
@@ -58,7 +58,7 @@ All my code will be here:
 > exception handling (try-except etc.)
 > debug tools   
 > review exercise
-- memory leaks 
+> memory leaks 
 > File input and output
 > the nature of file access objects
 > I/O bound - use as infrequently as possible
