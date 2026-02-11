@@ -55,9 +55,9 @@ class Weather():
 
 if __name__ == '__main__':
     # exercise this module
-    w_gen = Weather('Genoa', 'rainy', 9.04)
-    w_gal = Weather('Galway', 'windy', 6.70)
-    w_kt  = Weather('Kingston', 'sunny', 27.98)
+    w_gen = Weather('Genoa', 'rainy', 9.04098)
+    w_gal = Weather('Galway', 'windy', -6.70556)
+    w_kt  = Weather('Kingston', 'sunny', 29.9899)
    
     print(w_gen)
     print(w_gal)
@@ -65,3 +65,6 @@ if __name__ == '__main__':
 
     w_default = Weather(False, [], ()) # wrong data types so should fall back to the defaults
     print(w_default)
+
+    # we may examine the docstring like this:
+    print( Weather.__doc__ )
