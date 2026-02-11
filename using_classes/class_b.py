@@ -16,8 +16,12 @@ class Person():
         return self.__name
     @name.setter
     def name(self, new_name):
-        self.__name = new_name
-          
+        ''' here we can implement validation checks'''
+        if type(new_name)==str and len(new_name) >0:
+            self.__name = new_name
+        else:
+            self.__name = 'default' # we may choose to set a sensible default value
+
     @property
     def age(self):
         return self.__age
@@ -26,7 +30,7 @@ if __name__ == '__main__':
     flo = Person('Floella', 43)
     Eth = Person('Ethel', 98)
     # we may access members of our class like this
-    print(flo.name, flo.age) # here we call the getter-methods for name and age
+    print(flo.__name, flo.__age) # here we call the getter-methods for name and age
     # we may mutate data members like this
     # Eth.age = False
     # print(Eth.age)
