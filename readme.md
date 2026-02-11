@@ -75,8 +75,8 @@ All my code will be here:
     use built in structures until they do not suit the purpose (then use classes)
 - Objects and Classes (OOP)
   classes have properties (something belonging to the class) and methods (something the class can do)
-- get/set as property decorators @property
-- name mangling (__) and __slots__
+> get/set as property decorators @property
+> name mangling (__) and __slots__
 - properties, methods, __str__
 - inheritance
 - we have no direct control over memory management in Python

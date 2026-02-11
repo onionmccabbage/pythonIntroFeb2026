@@ -52,6 +52,10 @@ class Person():
     def __str__(self):
         # self.name calls the getter     self.__admin directly accesses the mangled value
         return f'{self.name} is {self.age} years old. Admin: {self.__admin}'
+    def __repr__(self):
+        # __repr__ is used in immediate-mode Python to represent an object
+        return f'{self.age} year-old {self.name}. Admin: {self.__admin}'
+
 
 if __name__ == '__main__':
     flo = Person('Floella', 43, True)
