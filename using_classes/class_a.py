@@ -1,11 +1,12 @@
 # In Python the file name has no relation to the class name
 
 # here is a class that does absolutely nothing
+# unless we say otherwise, all classes inherit from 'object'
 class XYZ: # the () are optional
     pass
 
 # Every time we create an instance of a class, it will run the __init__ method
-class ABC():
+class ABC(object):
     # __init__ is a bit like constructor in other languages
     def __init__(self, n): # we MUST provide self in any class method
         print(f'another instance has been created: {n}')

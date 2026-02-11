@@ -44,6 +44,8 @@ class Person():
             self.__admin = new_admin
         else:
             self.__admin = False
+    # All objects already have a __str__ method
+    # The __str__ method is used whenever we call 'print'
     def __str__(self):
         # self.name calls the getter     self.__admin directly accesses the mangled value
         return f'{self.name} is {self.age} years old. Admin: {self.__admin}'

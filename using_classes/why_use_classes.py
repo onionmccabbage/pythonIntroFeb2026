@@ -14,7 +14,7 @@ flod = {'age':43, 'fn':'Floella', 'obe':True}
 # Neither can we enforce facets, like min/max etc.
 # Also we cannot combine any functionality here
 
-# We would coose to use a class when we need to:
+# We would choose to use a class when we need to:
 # - associate data members as a single entity
 # - provide validation and limits on the data values
 # - include functionality to work with the data points
