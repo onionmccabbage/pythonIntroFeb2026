@@ -5,6 +5,9 @@
 
 class Person():
     '''store name and age'''
+    # to bring some rigour to our class, we may choose to restrict data members
+    # this is done by declaring a list of slots that are permitted
+    __slots__ = ['__name', '__age', '__admin']
     # we usually start with the __init__ method
     def __init__(self, n, a, admin=False): # we may choose to provide defaults (they must come last)
         # name-mangling: we put two underscores in front of data labels
@@ -71,3 +74,9 @@ if __name__ == '__main__':
     flo.name = 'Dame Floella' # this will fail (name is read-only)
     Eth.admin = 'daft'
     print(Eth.admin) # defaults to False
+
+    # Problem: since everything is an object, then everything may have arbitrary properties attached
+    flo.wibblyoo = 'nonsense' # we can prevent this by declaring __slots__ in our class
+    flo.__age = 'daft' # this is also prevented by using __slots__
+    # CAREFUL - remember .__age is an arbitrary property and is NOT RELATED to self.__age
+    print(flo.wibblyoo, flo.__age, flo.age)

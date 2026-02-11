@@ -25,11 +25,13 @@ class LoggedPerson(Person):
     def __str__(self):
         return f'{self.name} is {self.age} years old. Admin: {self.admin} logged in: {self.logged_in}'
 
-
 if __name__ == '__main__':
     # instances of our class
-    o = LoggedPerson('Oenid', 55, False, True)
-    print(o.logged_in)
+    o = LoggedPerson('Oenid', 55, False)
+    # we can acccess and mutate any of the properties (using get/set methods)
+    o.age += 1 # this increments by 1
+    o.admin = True
+    print(o)
 
 
     k = MyList()
